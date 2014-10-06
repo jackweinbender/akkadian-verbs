@@ -37,7 +37,7 @@ app.filter('glossFilter', function(){
 app.factory('dataFactory', ['$http', function($http){
   return {
     getData: function(){
-      return $http.get('https://raw.githubusercontent.com/jackweinbender/akkadian-verbs/master/data.json');
+      return $http.get('data.json');
   }
   }
 }]);
