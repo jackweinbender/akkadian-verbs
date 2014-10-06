@@ -37,7 +37,8 @@ app.filter('glossFilter', function(){
 app.factory('dataFactory', ['$http', function($http){
   return {
     getData: function(){
-      return $http.get('data.json');
+      var raw = $http.get('data.json');
+      return JSON.parse(raw);
   }
   }
 }]);
