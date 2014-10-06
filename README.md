@@ -1,0 +1,2 @@
+akkadian-verbs
+==============
