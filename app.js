@@ -1,4 +1,4 @@
-app = angular.module('akkadian', []);
+app = angular.module('akkadian',[]);
 
 app.controller('ctrl', ['$scope', 'dataFactory', function($scope, dataFactory){
   $scope.root_search = '';
@@ -34,8 +34,10 @@ app.filter('glossFilter', function(){
     return out;
   }
 });
-app.factory('dataFactory', function($http){
-  getData: function(){
-    return $http.get('https://raw.githubusercontent.com/jackweinbender/akkadian-verbs/master/data.json');
+app.factory('dataFactory', ['$http', function($http){
+  return {
+    getData: function(){
+      return $http.get('https://raw.githubusercontent.com/jackweinbender/akkadian-verbs/master/data.json');
   }
-});
+  }
+}]);
