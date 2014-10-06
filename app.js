@@ -3,7 +3,10 @@ app = angular.module('akkadian',[]);
 app.controller('ctrl', ['$scope', 'dataFactory', function($scope, dataFactory){
   $scope.root_search = '';
   $scope.gloss_search = '';
-  $scope.data = dataFactory.getData();
+  dataFactory.getData()
+    .success(function(data){
+      $scope.data = data;
+    });
   $scope.clear = function(){
     $scope.root_search = '';
     $scope.gloss_search = '';
