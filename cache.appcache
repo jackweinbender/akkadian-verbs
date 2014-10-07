@@ -1,9 +1,9 @@
 CACHE MANIFEST
 
-# fd5e93009a35fecde1f290bce0c6740ea08c100e
+# 4293ad127b203bd3f46c8f59505a96e4ffa1e012
 
 NETWORK:
-"*"
+*
 
 CACHE:
 index.html
