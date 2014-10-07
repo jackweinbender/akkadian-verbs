@@ -11,7 +11,7 @@
     <div class="container" ng-controller="ctrl">
       <div class="row">
         <h2>Akkadian Roots</h3>
-        <p>Search roots: <pre>T = ṭ, c = š, S = ṣ, x = ʾ</pre></p>
+        <p>Search roots: <pre>ṭ = T, š = c, ṣ = S, ʾ = x</pre></p>
         <p><button class='btn btn-success' ng-click="clear();">Clear Filters</button></p>
       </div>
       <div class="row">
@@ -29,7 +29,22 @@
               <input name="root" style="font-family:monospace;" class="form-control" type="text" ng-model="root_search" ng-model-options="{debounce: 250}" />
             </td>
             <td>
-              <input name="class" class="form-control" type="text" ng-model="class_search" disabled />
+              <select class="form-control" ng-model="class_search">
+                <option>(a-a)</option>
+                <option>(a-e)</option>
+                <option>(a-i)</option>
+                <option>(a-u)</option>
+                <option>(a-?)</option>
+                <option>(i-i)</option>
+                <option>(e-e)</option>
+                <option>(e-u)</option>
+                <option>(u-u)</option>
+                <option>(u-a)</option>
+                <option>(d-d)</option>
+                <option>(?-i)</option>
+                <option>(?-u)</option>
+                <option>(?-?)</option>
+              </select>
             </td>
             <td>
               <input name="inf" class="form-control" type="text" ng-model="inf_search" disabled />
