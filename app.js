@@ -3,10 +3,15 @@ app = angular.module('akkadian',[]);
 app.controller('ctrl', ['$scope', 'dataFactory', function($scope, dataFactory){
   $scope.root_search = '';
   $scope.gloss_search = '';
+  
+  $scope.data = localStorage.getItem('akkadianVerbs001');
+  
   dataFactory.getData()
     .success(function(data){
+      localStorage.setItem('akkadianVerbs001', data);
       $scope.data = data;
     });
+
   $scope.clear = function(){
     $scope.root_search = '';
     $scope.gloss_search = '';
@@ -41,6 +46,6 @@ app.factory('dataFactory', ['$http', function($http){
   return {
     getData: function(){
       return $http.get('data.json');
-  }
+    }
   }
 }]);
