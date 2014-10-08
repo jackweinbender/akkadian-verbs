@@ -13,6 +13,7 @@ app.controller('ctrl', ['$scope', 'dataFactory', function($scope, dataFactory){
   $scope.clear = function(){
     $scope.root_search = '';
     $scope.gloss_search = '';
+    $scope.class_search = '';
   }
 }]);
 app.filter('rootFilter', function(){
