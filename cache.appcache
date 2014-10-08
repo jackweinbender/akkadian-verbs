@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# 100188f37144865941662e25134d7b5b81a543e0
+# a4b7998b71491d85ccab90d0b54ea9059cefae19
 
 NETWORK:
 *
@@ -14,4 +14,4 @@ data.json
 
 # Lbrary files
 libs.js
-bootstrap.min.css
+bootstrap.css
