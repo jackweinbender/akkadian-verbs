@@ -4,7 +4,7 @@
   <head>
 
     <meta charset="utf-8">
-    <link data-require="bootstrap@*" data-semver="3.2.0" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.css" />
   </head>
 
   <body ng-app="akkadian">
@@ -57,7 +57,7 @@
         <tbody>
           <tr ng-repeat="word in data | 
           		rootFilter:root_search |
-          		glossFilter:gloss_search">
+          		glossFilter:gloss_search | filter:class_search">
             <td class="col-xs-1">
               <code>{{ word.root }}</code>
             </td>
@@ -74,11 +74,7 @@
         http://www.ling.helsinki.fi/~asahala/verblist.html)</p>
       </div>
     </div>
-    <script data-require="jquery@*" data-semver="2.1.1" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script data-require="bootstrap@*" data-semver="3.2.0" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js"></script>
-    <script type="text/javascript" src="fuse.js"></script>
-    <link data-require="bootstrap@*" data-semver="3.2.0" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css" />
-    <script data-require="angular.js@1.3.0-rc.3" data-semver="1.3.0-rc.3" src="https://code.angularjs.org/1.3.0-rc.3/angular.js"></script>
+    <script type="text/javascript" src="libs.js"></script>
     <script type="text/javascript" src="app.js"></script>
   </body>
 
