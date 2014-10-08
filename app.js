@@ -3,12 +3,10 @@ app = angular.module('akkadian',[]);
 app.controller('ctrl', ['$scope', 'dataFactory', function($scope, dataFactory){
   $scope.root_search = '';
   $scope.gloss_search = '';
-  
-  $scope.data = localStorage.getItem('akkadianVerbs001');
+  $scope.class_search = '';
   
   dataFactory.getData()
     .success(function(data){
-      localStorage.setItem('akkadianVerbs001', data);
       $scope.data = data;
     });
 
