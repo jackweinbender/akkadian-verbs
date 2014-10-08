@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# b70689d20c670f9f8462b04e578176e88e5491ba
+# 77176b56b01bd437e17858bdb5a93ef25b639b4a
 
 NETWORK:
 *
@@ -10,7 +10,7 @@ index.html
 fuse.js
 app.js
 data.json
-https://code.angularjs.org/1.3.0-rc.3/angular.js
-https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js
-https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js
-https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css
+http://code.angularjs.org/1.3.0-rc.3/angular.js
+http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js
+http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js
+http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css
