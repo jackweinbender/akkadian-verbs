@@ -1,1 +1,1 @@
-http://jackweinbender.github.io/akkadian-verbs/
+https://jackweinbender.github.io/akkadian-verbs/
